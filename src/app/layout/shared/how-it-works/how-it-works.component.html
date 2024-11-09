@@ -1,0 +1,33 @@
+<section class="pt-9 container">
+  <div class="testimonial-heading d-flex flex-column align-items-center justify-content-center text-center mb-3">
+    <h3 class="mb-4 fs-6">How it works</h3>
+    <h5 class="fw-normal text-secondary">Getting started with Elite Enterprise Properties to let your property and enjoy guaranteed rent for a minimum of three years is incredibly simple. Here’s the process:</h5>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-4" *ngFor="let item of content">
+      <div class="how-done align-items-center justify-content-center text-center">
+        <img class="mb-4" [src]="item.url" alt=""  style="max-width:300px; height: 200px;"/>
+        <h3 class="mb-2 fs-5 fw-medium">item.title</h3>
+        <p class="mb-3 fw-normal text-secondary">{{item.text}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="how-done align-items-center justify-content-center text-center">
+        <img class="mb-4" src="houses/8.jpeg" alt=""  style="max-width:300px; height: 200px;"/>
+        <h3 class="mb-2 fs-5 fw-medium">Peace of Mind</h3>
+        <p class="mb-3 fw-normal text-secondary">
+          Rest assured, your property is in safe hands. It’s time for you to embrace a hands-off approach to being a landlord, liberated from the stresses of daily tenant management, concerns about rent collection and vacancies, the costs of agency fees,
+           maintenance and repairs, and the expenses involved in returning your property to its pre-let condition.
+        </p>
+      </div>
+      <ng-content></ng-content>
+      <div class="col-md-4"></div>
+    </div>
+
+  </div>
+</section>

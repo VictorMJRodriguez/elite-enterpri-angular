@@ -1,0 +1,43 @@
+.icon-strip {
+    background: #05253A;
+    padding: 80px 120px;
+  }
+  
+  .icon-strip .icon-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-strip .icon-group p {
+    color: #fff;
+  }
+  
+  .icon-strip .icon-group span {
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .icon-strip .icon-group img {
+    max-width: 90px;
+    margin-right: 25px;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .icon-strip .icon-group {
+        margin-bottom: 45px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .icon-strip {
+        padding: 60px 30px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .icon-strip .container {
+        padding: 0 !important;
+    }
+  }

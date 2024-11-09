@@ -1,0 +1,77 @@
+<section class="contact-us pt-9">
+
+  <div class="contact-container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h5 class="text-white fw-normal">Request Your FREE Rental Valuation</h5>
+        <h3 class="mb-4 fs-6 pt-4 text-white contact-text">We only need a few details to determine your rental offer. 
+          Feel free to use this form to ask for additional information about our services as well!</h3>
+          <div class="mb-5">
+            <h3 class="text-white fw-medium"><i class="fa fa-envelope me-2" style="color: white;"></i> infoexample.com</h3>
+            <h3 class="text-white fw-medium"><i class="fa fa-phone me-2" style="color: white;"></i> +1 (555) 123-4567</h3>
+          </div>        
+          </div>
+      <div class="col-lg-6">
+
+<!-- contact.component.html -->
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit($event)">
+  <div class="row">
+    <div class="col-md-6 col-12">
+      <input type="text" class="form-control" placeholder="Full Name*" name="name" formControlName="name" />
+      <span class="error-message" *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+        Name is required
+      </span><br>
+    </div>
+    <div class="col-md-6 col-12">
+      <input type="email" class="form-control" placeholder="Email Address*" name="from_email" formControlName="from_email" />
+      <span class="error-message" *ngIf="contactForm.get('from_email')?.invalid && contactForm.get('from_email')?.touched">
+        Enter a valid email
+      </span><br>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 col-12">
+      <input type="text" class="form-control" placeholder="Contact No*" name="contact_no" formControlName="contact_no" />
+      <span class="error-message" *ngIf="contactForm.get('contact_no')?.invalid && contactForm.get('contact_no')?.touched">
+        Contact No is required
+      </span><br>
+    </div>
+    <div class="col-md-6 col-12">
+      <input type="text" class="form-control" placeholder="Preferred Contact Method" name="preferred_contact_method" formControlName="preferred_contact_method" />
+      <span class="error-message"></span><br>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 col-12">
+      <input type="text" class="form-control" placeholder="No of beds*" name="no_of_beds" formControlName="no_of_beds" />
+      <span class="error-message" *ngIf="contactForm.get('no_of_beds')?.invalid && contactForm.get('no_of_beds')?.touched">
+        No of beds is required
+      </span><br>
+    </div>
+    <div class="col-md-6 col-12">
+      <input type="text" class="form-control" placeholder="Postcode*" name="postcode" formControlName="postcode" />
+      <span class="error-message" *ngIf="contactForm.get('postcode')?.invalid && contactForm.get('postcode')?.touched">
+        Postcode is required
+      </span><br>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-12 message">
+      <textarea class="form-control" rows="5" placeholder="Message" name="message" formControlName="message"></textarea>
+      <span class="error-message" *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+        Message is required
+      </span>
+    </div>
+  </div>
+  <input type="text" name="reply_to" formControlName="name" hidden />
+  <button class="btn mt-3">Send Message</button>
+</form>  
+      </div>
+    </div>
+
+  </div>
+
+</section>

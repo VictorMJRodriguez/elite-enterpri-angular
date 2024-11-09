@@ -1,0 +1,98 @@
+.logo-container {
+    background: #F2F1EB;
+    display: flex;
+    padding: 25px;
+    max-width: 172px;
+  }
+
+  @media screen and (min-width: 375px) {
+    .header .logo-section{
+        padding: 0;
+    }
+  
+    .header .nav-section{
+      padding: 0;
+  }
+  }
+
+  .home {
+    padding: 0;
+    margin: auto;
+  }
+
+  .navbar{
+    background-color: #ffff;
+    padding: 0 !important;
+  }
+  
+  .navbar .btn {
+    float: right;
+    margin: 14px 23px 15px 0;
+  }
+  
+  .sticky-top {
+    background-color: #F2F1EB !important;
+  }
+
+  @media (min-width: 992px) {
+    .mt-lg-0 {
+        margin-top: 0 !important;
+    }
+}
+
+  @media (min-width: 992px) {
+      .border-lg-0 {
+          border: 0 !important;
+      }
+  }
+
+  @media screen and (max-width: 991px) {
+  
+    .logo-container{
+      height: 4.78rem;
+      padding: 0;
+    }
+  
+    .logo-container img{
+      width: 70px ;
+    }
+  
+    .navbar{
+      padding: 16px !important;
+    }
+  
+    .header .button-group {
+      display: inline-flex !important;
+      justify-content: center;
+      align-items: center;
+      float: right;
+      margin-top: 5px;
+  }
+  }
+
+  @media screen and (min-width: 375px) {
+    .header .logo-section{
+        padding: 0;
+    }
+  
+    .header .nav-section{
+      padding: 0;
+  }
+  }
+
+  .icon-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icons */
+    margin-right: 2rem; /* Space between icons and toggle button */
+  }
+  
+  .icon-section a {
+    color: #333; /* Color for the icons */
+    text-decoration: none;
+    font-size: 1.2rem; /* Size of the icons */
+  }
+  
+  .icon-section a:hover {
+    color: #007bff; /* Hover color */
+  }

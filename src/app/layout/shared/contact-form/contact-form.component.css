@@ -1,0 +1,67 @@
+.contact-container{
+
+    width: 100%;
+    max-width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+    margin: 0 auto;
+    background-color: #05253A;
+    padding: 5rem !important;
+  
+  }
+  
+  .contact-container .p{
+    color: white;
+  }
+
+  .form-control {
+    border-radius: 0; /* Make corners square */
+  }
+  
+  .form-container {
+   
+    border-radius: 0; /* Square corners */
+  }
+  
+  .form-control::placeholder { /* Styling the placeholder */
+    color: grey !important; /* Placeholder color */
+    text-align: left !important; /* Align placeholder text to the left */
+    font-size: small !important;
+  }
+  
+  form .col-md-6:first-child {
+    padding-right: 5px;
+  }
+  
+  form .col-md-6:last-child {
+    padding-left: 5px;
+  }
+  
+  @media screen and (max-width: 762px) {
+    form .col-md-6 {
+        padding: 0 !important;
+    }
+  
+   form .message{
+    padding: 0 !important;
+   }
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+    }
+  
+    .contact-text{
+      font-size: 1.5rem !important;
+    }
+
+    .contact-container{
+        padding: 2rem !important;
+      
+      }
+  }
+
+  .error-message{
+    color: red !important;
+  }

@@ -1,0 +1,32 @@
+.top-nav {
+    background: #F2F1EB;
+    border-bottom: 1px solid rgba(3, 39, 97, .1529411765);
+    display: flex;
+    padding-left: 10px;
+    height: 2.8rem;
+  }
+  
+    .top-nav a {
+    padding-right: 25px;
+    display: flex;
+      align-items: center;
+  }
+  
+   .top-nav a svg {
+    margin-right: 14px;
+  }
+  
+   .top-nav a {
+    text-decoration: none;
+    padding: 20px 15px;
+  }
+
+  .top-nav a{
+    color: #05253A;
+  }
+
+  @media screen and (max-width: 991px) {
+    .top-nav {
+        display: none;
+    }
+  }

@@ -1,0 +1,93 @@
+<section class="pt-7">
+  <div>
+    <div class="row align-items-center">
+      <div class="col-md-6 text-md-start text-center py-6">
+        <h1 class="mb-4 fs-8 fw-semi-bold">Reliable Rent, Worry-Free Ownership</h1>
+        <p class="mb-5 lead fw-normal text-secondary">Entrust your London rental property to the experienced team at Elite Enterprise
+           Properties and enjoy the perks of guaranteed rental income with seamless, no-cost property management.</p>
+          <div class="d-flex align-items-center mb-3" *ngFor="let item of checkList">
+            <img class="me-sm-4 me-2" [src]="item.url" width="35" alt="tick" />
+            <p class="fw-normal mb-0 text-secondary"> {{item.text}}</p>
+          </div>
+        <div class="text-center text-md-start"><a class="btn me-3 mt-4 btn-lg" [routerLink]="['/contact-us']" role="button">Get your FREE valuation</a></div>
+      </div>
+      <div class="col-md-6 text-end"><img class="pt-7 pt-md-0 img-fluid" src="houses/hero-img.jpeg" alt="hero-img" /></div>
+    </div>
+  </div>
+</section>
+
+<section class="pt-5" id="validation">
+    <div class="row">
+      <div class="col-lg-6 mt-4">
+        <h5 class="text-secondary mb-4 fw-normal">Guaranteed Rent</h5>
+        <h3 class="mb-4 fs-6 fw-semi-bold">The Easy Route to Guaranteed Rent, Backed by Our Service Promise</h3>
+        <p class="mb-4 fw-normal text-secondary">
+          Boost your rental income and lighten your workload with Elite Enterprise Properties’ fee-free property management. 
+          Receive guaranteed rent every month throughout your contract—even if your property is vacant.
+        </p>
+        <p class="mb-4 fw-normal text-secondary">
+          Thanks to our strong partnerships with local authorities and housing associations, letting your property is effortless. From tenant sourcing to lease agreements, and from repairs to routine inspections, 
+          we handle everything for you—seamlessly managed and supported by our exclusive service promise.
+        </p>
+
+        <div class="text-center text-md-start"><a class="btn  me-3 btn-lg" [routerLink]="['/guaranteed-rent']" role="button">More about Guaranteed Rent</a></div>
+      </div>
+      <div class="col-lg-6 mt-5">
+
+        <div class="d-flex align-items-center mb-8">
+          <!-- Image -->
+          <div class="flex-shrink-0 me-5">
+            <img src="houses/3.jpeg" alt="Your Image" style="max-width: 200px;">
+          </div>
+          
+          <!-- Text -->
+          <div>
+            <h6 class="mb-2 fs-2 fw-medium">Guaranteed Rent with Our Service Promise</h6>
+            <p class="mb-2 fw-normal text-secondary fs">
+              Enjoy reliable rental income, supported by a responsive, professional team committed to safeguarding both your property and your earnings.
+            </p>
+
+          </div>
+        </div>
+
+        
+        <div class="d-flex align-items-center mb-8">
+          <!-- Image -->
+          <div class="flex-shrink-0 me-5">
+            <img src="houses/7.jpeg" alt="Your Image" style="max-width: 200px;">
+          </div>
+          
+          <!-- Text -->
+          <div>
+            <h6 class="mb-2 fs-2 fw-medium">Comprehensive Management & Repairs Included</h6>
+            <p class="mb-2 fw-normal text-secondary fs">
+              Maximize your rental returns with peace of mind—daily maintenance, repairs, and expert tenancy management, all with zero fees.
+            </p>  
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center mb-8">
+          <!-- Image -->
+          <div class="flex-shrink-0 me-5">
+            <img src="houses/13.jpeg" alt="Your Image" style="max-width: 200px;">
+          </div>
+          
+          <!-- Text -->
+          <div>
+            <h6 class="mb-2 fs-2 fw-medium">Your Property, Fully Protected</h6>
+            <p class="mb-2 fw-normal text-secondary fs">
+              Rest easy knowing your valuable asset is in trusted hands, returned to you in pre-let condition, accounting only for fair wear and tear.
+            </p> 
+          </div>
+        </div>
+ </div>
+  </div><!-- end of .container-->
+
+</section>
+
+<app-icon-strip></app-icon-strip>
+
+<app-about></app-about>
+
+<app-contact-form></app-contact-form>
+
