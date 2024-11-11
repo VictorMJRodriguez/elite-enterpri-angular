@@ -66,8 +66,8 @@
       </span>
     </div>
   </div>
-  <input type="text" name="reply_to" formControlName="name" hidden />
-  <button class="btn mt-3">Send Message</button>
+  <input type="text" name="reply_to" formControlName="reply_to" hidden />
+  <button class="btn mt-3" [disabled]="isSubmitted">Send Message</button>
 </form>  
       </div>
     </div>

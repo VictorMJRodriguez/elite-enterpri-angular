@@ -6,12 +6,16 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { LayoutRoutingModule } from '../layout-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   declarations: [ContactFormComponent, IconStripComponent,  AboutComponent, HowItWorksComponent],
   exports: [

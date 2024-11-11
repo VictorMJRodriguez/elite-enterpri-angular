@@ -1,8 +1,13 @@
 .logo-container {
     background: #F2F1EB;
     display: flex;
-    padding: 25px;
+    padding: 0.7rem;
     max-width: 172px;
+  }
+
+  .logo-container img{
+    width: 100%;
+    height: 6.2rem;
   }
 
   @media screen and (min-width: 375px) {
@@ -67,6 +72,10 @@
       align-items: center;
       float: right;
       margin-top: 5px;
+  }
+
+  .logo-container img{
+    height: 74px;
   }
   }
 
