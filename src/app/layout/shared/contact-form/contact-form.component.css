@@ -5,7 +5,7 @@
     height: auto; 
     overflow: hidden; 
     margin: 0 auto;
-    background-color: #05253A;
+    background-color: #01576e;
     padding: 5rem !important;
   
   }
@@ -64,4 +64,9 @@
 
   .error-message{
     color: red !important;
+  }
+
+  .btn{
+    color: #01576e !important;
+    background-color: #fff7e2 !important;
   }

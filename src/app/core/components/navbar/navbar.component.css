@@ -1,5 +1,4 @@
 .logo-container {
-    background: #F2F1EB;
     display: flex;
     padding: 0.7rem;
     max-width: 172px;
@@ -33,10 +32,6 @@
   .navbar .btn {
     float: right;
     margin: 14px 23px 15px 0;
-  }
-  
-  .sticky-top {
-    background-color: #F2F1EB !important;
   }
 
   @media (min-width: 992px) {
@@ -104,4 +99,9 @@
   
   .icon-section a:hover {
     color: #007bff; /* Hover color */
+  }
+
+  .btn{
+    color: #01576e !important;
+    background-color: #fff7e2 !important;
   }

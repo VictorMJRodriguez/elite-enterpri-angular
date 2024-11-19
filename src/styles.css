@@ -62,8 +62,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: #2F281E;
-    /* background-color: #f7f9fc; */
-    background-color: #E1DEBF !important;
+    background-color: #fff7e2 !important;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
@@ -3242,7 +3241,7 @@
     display: inline-block;
     font-weight: 600;
     line-height: 1.5;
-    color: #2F281E;
+    color: #ffff;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
@@ -4867,11 +4866,11 @@
   
   .navbar-light .navbar-toggler {
     color: #212832;
-    border-color: rgba(0, 0, 0, 0.1);
+    border-color: #01576e;
   }
   
   .navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23212832' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M0 6h30M0 14h30M0 22h30'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M0 6h30M0 14h30M0 22h30'/%3E%3C/svg%3E");
   }
   
   .navbar-light .navbar-text {
@@ -17533,9 +17532,21 @@ a {
     font-size: 16px !important;
     line-height: 21px !important;
     cursor: pointer !important;
-    color: #05253A !important;
-    /* background: #fdbe00; */
-    background: #4C847B !important;
+    color: white !important;
+    background: #01576e !important;
     border-radius: 50px !important;
     padding: 12.5px 26px !important;
+  }
+
+  .nav-bar-color{
+
+    background-color: #01576e !important;
+  }
+
+  .nav-bar-color a {
+    color: white !important;
+  }
+
+  .nav-bar-color svg {
+    color: white !important;
   }
