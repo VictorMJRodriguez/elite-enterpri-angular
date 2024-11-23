@@ -8,6 +8,9 @@ import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { LayoutRoutingModule } from '../layout-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { FaqsComponent } from './faqs/faqs.component';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { CompaniesComponent } from './companies/companies.component';
 
 @NgModule({
   imports: [
@@ -15,11 +18,12 @@ import { ToastrModule } from 'ngx-toastr';
     ReactiveFormsModule,
     LayoutRoutingModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    NgbCollapseModule
   ],
-  declarations: [ContactFormComponent, IconStripComponent,  AboutComponent, HowItWorksComponent],
+  declarations: [ContactFormComponent, IconStripComponent,  AboutComponent, HowItWorksComponent, FaqsComponent, CompaniesComponent],
   exports: [
-    ContactFormComponent, IconStripComponent, AboutComponent, HowItWorksComponent
+    ContactFormComponent, IconStripComponent, AboutComponent, HowItWorksComponent, FaqsComponent, CompaniesComponent
   ]
 })
 export class SharedModule { }

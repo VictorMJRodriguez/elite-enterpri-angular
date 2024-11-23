@@ -1,0 +1,31 @@
+<section class="pt-5" id="validation">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="mb-4 fs-6 fw-semi-bold">How it works.</h3>
+      <p class="mb-4 fw-normal text-secondary">
+        We make our Landlord onboarding process as fast and efficient as possible.
+      </p>
+
+      <div class="accordion">
+        <div class="card mb-3 pointer-cursor"  *ngFor="let item of content; let i = index">
+          <div class="card-header" (click)="collapse[i]=!collapse[i]"
+          [attr.aria-expanded]="collapse[i]"
+          aria-controls="collapseExample">
+            <h5 class="text-secondary">
+              {{item.title}}
+              <span class="float-right">
+                <i class="fa fa-caret-right" style="color: white;"></i>
+               </span>
+            </h5>
+          </div>
+          <div [ngbCollapse]="collapse[i]">
+            <p class="fw-normal text-secondary answer-body">
+             {{item.text}}
+            </p>
+          </div>
+        </div>
+      </div>     
+    </div>
+</div><!-- end of .container-->
+
+</section>

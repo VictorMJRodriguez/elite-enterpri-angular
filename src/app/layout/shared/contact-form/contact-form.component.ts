@@ -12,6 +12,7 @@ export class ContactFormComponent implements OnInit {
 
   contactForm: FormGroup = new FormGroup({});
   isSubmitted = false;
+  email = 'eliteenterprisepropertiesltd@gmail.com';
 
   constructor(private fb: FormBuilder, private toastr: ToastrService) {}
 

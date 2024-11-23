@@ -1,0 +1,21 @@
+.card-header{
+    padding: 20px;
+    background-color: #01576e;
+}
+
+.card-header h5{
+    color: white !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.answer-body{
+    padding: 20px;
+    background-color: #fff7e2;
+}
+
+.pointer-cursor {
+    cursor: pointer;
+  }

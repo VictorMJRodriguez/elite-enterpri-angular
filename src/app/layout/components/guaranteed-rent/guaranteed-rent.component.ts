@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-export interface Content{
-  url: string,
-  title: string,
-  text: string
-}
+import { Content } from '../../../shared/models/content';
 
 @Component({
   selector: 'app-guaranteed-rent',
