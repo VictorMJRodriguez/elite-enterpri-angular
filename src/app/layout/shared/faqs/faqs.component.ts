@@ -26,7 +26,7 @@ export class FaqsComponent implements OnInit {
     },
     {
       title: 'Management and maintenance of your property',
-      text: `Elite Enterpri Properties take over all of the management and maintenance of the property to give you a truly “hands-off” experience. `
+      text: `Elite Enterprise Properties take over all of the management and maintenance of the property to give you a truly “hands-off” experience. `
     },
     {
       title: 'End of agreement purchase options',
