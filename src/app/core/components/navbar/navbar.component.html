@@ -23,10 +23,18 @@
          </div>
             <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
               <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link fw-bold ms-3" [routerLink]="['/about']">About Us</a></li>
-                <li class="nav-item"><a class="nav-link fw-bold ms-3" [routerLink]="['/guaranteed-rent']">Guaranteed Rent</a></li>
-                <li class="nav-item"><a class="nav-link fw-bold ms-3" [routerLink]="['/landlord']">Landlords</a></li>
-                <li class="nav-item"><a class="nav-link fw-bold ms-3" [routerLink]="['/contact-us']">Contact Us</a></li>
+                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                  <a class="nav-link fw-bold ms-3" [routerLink]="['/about']">About Us</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                  <a class="nav-link fw-bold ms-3" [routerLink]="['/guaranteed-rent']">Guaranteed Rent</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                  <a class="nav-link fw-bold ms-3" [routerLink]="['/landlord']">Landlords</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                  <a class="nav-link fw-bold ms-3" [routerLink]="['/contact-us']">Contact Us</a>
+                </li>
               </ul>
               <div class="ms-auto">
                 <a class="btn" [routerLink]="['/contact-us']">Get in touch</a>
